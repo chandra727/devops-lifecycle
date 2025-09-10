@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .diagram-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 1000px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    svg {
+      display: block;
+      margin: 30px auto;
+    }
+    .label {
+      font-size: 14px;
+      fill: #fff;
+      font-weight: bold;
+    }
+    .stage {
+      fill: #007ACC;
+      stroke: #005A9E;
+      stroke-width: 2;
+    }
+    .arrow {
+      stroke: #333;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+      fill: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="diagram-container">
+    <h1>DevOps Lifecycle</h1>
+    <svg width="900" height="400">
+
+      <!-- Define Arrowhead Marker -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7"
+          refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+        </marker>
+      </defs>
+
+      <!-- Stages -->
+      <g>
+        <rect class="stage" x="50" y="150" width="100" height="50" rx="10" />
+        <text class="label" x="100" y="180" text-anchor="middle">Plan</text>
+      </g>
+
+      <g>
+        <rect class="stage" x="180" y="150" width="100" height="50" rx="10" />
+        <text class="label" x="230" y="180" text-anchor="middle">Develop</text>
+      </g>
+
+      <g>
+        <rect class="stage" x="310" y="150" width="100" height="50" rx="10" />
+        <text class="label" x
